@@ -245,6 +245,7 @@ a {
   letter-spacing: 0.03em;
   color: currentColor;
   background-color: var(--btn-background-color);
+  cursor: pointer;
 }
 
 .portfolio-btn:hover,
