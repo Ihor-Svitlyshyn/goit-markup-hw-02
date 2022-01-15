@@ -1,27 +1,32 @@
 :root {
+  --body-color: #212121;
+  --body-background-color: #ffffff;
   --logo-first-color: #2196f3;
   --logo-second-color: #000000;
   --header-link-accent-color: #2196f3;
   --header-contacts-link-color: #757575;
   --header-contacts-link-accent-color: #2196f3;
-  --hero-background-color: #2f303a;
-  --hero-title-color: #ffffff;
-  --btn-background-color: #f5f4fa;
-  --btn-accent-background-color: #2196f3;
-  --btn-accent-color: #ffffff;
-  --peculiarities-text-color: #757575;
-  --team-item-text-color: #757575;
   --footer-background-color: #2f303a;
   --footer-logo-first-color: #2196f3;
   --footer-logo-second-color: #ffffff;
   --footer-maps-link-color: #ffffff;
   --footer-contacts-link-color: rgba(255, 255, 255, 0.6);
   --footer-accent-link-color: #2196f3;
+  --hero-background-color: #2f303a;
+  --hero-title-color: #ffffff;
+  --btn-background-color: #f5f4fa;
+  --btn-accent-background-color: #2196f3;
+  --btn-accent-color: #ffffff;
+  --peculiarities-text-color: #757575;
+  --team-background-color: #f5f4fa;
+  --team-item-text-color: #757575;
+  --portfolio-projects-text-color: #757575;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #212121;
+  color: var(--body-color);
+  background-color: var(--body-background-color);
 }
 
 .list {
@@ -33,6 +38,7 @@ a {
 }
 
 /*-------------------HEADER----------------------*/
+
 .header-logo {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
@@ -71,6 +77,44 @@ a {
   color: var(--header-contacts-link-accent-color);
 }
 
+/* ----------------FOOTER------------------- */
+
+.footer {
+  background-color: var(--footer-background-color);
+}
+
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+}
+.footer-logo-first {
+  color: var(--footer-logo-first-color);
+}
+.footer-logo-second {
+  color: var(--footer-logo-second-color);
+}
+
+.footer-link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+}
+.footer-maps-link {
+  color: var(--footer-maps-link-color);
+}
+.footer-contacts-link {
+  color: var(--footer-contacts-link-color);
+}
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--footer-accent-link-color);
+}
+
+/* -----------------STUDIO---------------------- */
 /* --------------------HERO------------------------ */
 .hero {
   background-color: var(--hero-background-color);
@@ -147,6 +191,10 @@ a {
 
 /* --------------------TEAM------------------ */
 
+.team {
+  background-color: var(--team-background-color);
+}
+
 .team-title {
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -172,39 +220,49 @@ a {
   color: var(--team-item-text-color);
 }
 
-/* ----------------FOOTER------------------- */
+/* ---------------------PORTFOLIO------------------- */
+/* -------------------- portfolio-------------------*/
 
-.footer {
-  background-color: var(--footer-background-color);
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
-.footer-logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: calc(31 / 26);
+.portfolio-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
   letter-spacing: 0.03em;
-}
-.footer-logo-first {
-  color: var(--footer-logo-first-color);
-}
-.footer-logo-second {
-  color: var(--footer-logo-second-color);
+  color: currentColor;
+  background-color: var(--btn-background-color);
 }
 
-.footer-link {
-  font-style: normal;
-  font-size: 14px;
-  line-height: calc(24 / 14);
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  background-color: var(--btn-accent-background-color);
+  color: var(--btn-accent-color);
+}
+
+.portfolio-projects-title {
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: currentColor;
+}
+
+.portfolio-projects-text {
+  font-size: 16px;
+  line-height: calc(30 / 16);
   letter-spacing: 0.03em;
-}
-.footer-maps-link {
-  color: var(--footer-maps-link-color);
-}
-.footer-contacts-link {
-  color: var(--footer-contacts-link-color);
-}
-.footer-link:hover,
-.footer-link:focus {
-  color: var(--footer-accent-link-color);
+  color: var(--portfolio-projects-text-color);
 }
