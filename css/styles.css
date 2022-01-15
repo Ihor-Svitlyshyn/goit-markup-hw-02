@@ -14,11 +14,14 @@
   --footer-accent-link-color: #2196f3;
   --hero-background-color: #2f303a;
   --hero-title-color: #ffffff;
-  --btn-background-color: #f5f4fa;
-  --btn-accent-background-color: #2196f3;
-  --btn-accent-color: #ffffff;
+  --hero-btn-background-color: #2196f3;
+  --hero-btn-color: #ffffff;
+  --hero-btn-accent-background-color: #f5f4fa;
   --peculiarities-text-color: #757575;
   --team-background-color: #f5f4fa;
+  --portfolio-btn-background-color: #f5f4fa;
+  --portfolio-btn-accent-background-color: #2196f3;
+  --portfolio-btn-accent-color: #ffffff;
   --team-item-text-color: #757575;
   --portfolio-projects-text-color: #757575;
 }
@@ -139,14 +142,14 @@ a {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: currentColor;
-  background-color: var(--btn-background-color);
+  color: var(--hero-btn-color);
+  background-color: var(--hero-btn-background-color);
   cursor: pointer;
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: var(--btn-accent-background-color);
-  color: var(--btn-accent-color);
+  background-color: var(--hero-btn-accent-background-color);
+  color: currentColor;
 }
 
 /* ----------------PECULIARITIES----------------*/
@@ -244,14 +247,14 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   color: currentColor;
-  background-color: var(--btn-background-color);
+  background-color: var(--portfolio-btn-background-color);
   cursor: pointer;
 }
 
 .portfolio-btn:hover,
 .portfolio-btn:focus {
-  background-color: var(--btn-accent-background-color);
-  color: var(--btn-accent-color);
+  background-color: var(--portfolio-btn-accent-background-color);
+  color: var(--portfolio-btn-accent-color);
 }
 
 .portfolio-projects-title {
